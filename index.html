@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Profit or Loss</title>
-</head>
-<body>
-    <label>Initial stock <input type="number" id="initial-stock"></label>
-    <label>stock quantity<input type="number" id="stock-quantity"></label>
-    <label>Current stock <input type="number" id="current-stock"></label>
-
-    <button id="submit-btn">Tell Me!!</button>
+  </head>
+  <body>
+    <h2 class="heading">Stock Profile& Loss Calculator</h2>
+    <div class="d-flex justify-content-center align-items-center main_div">
+      <label class="initial-label" for="initial-stock"
+        >Initial stock <input class="input" type="number" id="initial-stock" placeholder=" Enter initial stock Price here"
+      /></label>
+      <label class="quantity-label" for="stock-quantity"
+        >stock quantity<input class="input" type="number" id="stock-quantity" placeholder="Enter the number of stock bought"
+      /></label>
+      <label class="current-label" for="current-stock"
+        >Current stock <input class="input" type="number" id="current-stock" placeholder="Enter the Current price of the Stocks"
+      /></label>
+   
+    <button
+      id="submit-btn"
+    >
+      Tell Me!!
+    </button>
     <div id="output-box"></div>
+</div>
+<footer class="online-presence">
+    <p>social media presence</p>
+    <div class="social">
+      <p><a href="https://github.com/pranish07" target="_blank">github</a> </p>
+      <p> <a href="https://twitter.com/Pranish194" target="_blank">twitter</a></p>
+      <p><a href="https://pranish-portfolio.netlify.app/" target="_blank">portfolio</a> </p>
+    </div>
+  </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
